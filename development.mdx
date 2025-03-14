@@ -1,6 +1,6 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: "Development"
+description: "Preview changes locally to update your docs"
 ---
 
 <Info>
@@ -12,13 +12,16 @@ Follow these steps to install and run Mintlify on your operating system:
 **Step 1**: Install Mintlify:
 
 <CodeGroup>
-  ```bash npm
-  npm i -g mintlify
-  ```
 
-  ```bash yarn
-  yarn global add mintlify
-  ```
+```bash npm
+npm i -g mintlify
+```
+
+
+```bash yarn
+yarn global add mintlify
+```
+
 </CodeGroup>
 
 **Step 2**: Navigate to the docs directory (where the `mint.json` file is located) and execute the following command:
@@ -48,13 +51,16 @@ Port 3000 is already in use. Trying 3001 instead.
 Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
 
 <CodeGroup>
-  ```bash npm
-  npm i -g mintlify@latest
-  ```
 
-  ```bash yarn
-  yarn global upgrade mintlify
-  ```
+```bash npm
+npm i -g mintlify@latest
+```
+
+
+```bash yarn
+yarn global upgrade mintlify
+```
+
 </CodeGroup>
 
 ## Validating Links
@@ -75,7 +81,10 @@ mintlify broken-links
 If the deployment is successful, you should see the following:
 
 <Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
+  <img
+    src="/images/checks-passed.png"
+    style={{ borderRadius:"0.5rem" }}
+  />
 </Frame>
 
 ## Code Formatting
@@ -85,16 +94,13 @@ We suggest using extensions on your IDE to recognize and format MDX. If you're a
 ## Troubleshooting
 
 <AccordionGroup>
-  <Accordion title="Error: Could not load the &#x22;sharp&#x22; module using the darwin-arm64 runtime">
+  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
     This may be due to an outdated version of node. Try the following:
 
     1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-
     2. Upgrade to Node v19 or higher.
-
     3. Reinstall mintlify: `npm install -g mintlify`
   </Accordion>
-
   <Accordion title="Issue: Encountering an unknown error">
     Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
   </Accordion>
@@ -102,20 +108,25 @@ We suggest using extensions on your IDE to recognize and format MDX. If you're a
 
 Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
 
-<Accordion title="New Accordion" defaultOpen="false" />
+<Accordion title="New Accordion" defaultOpen="false">
+  
+</Accordion>
 
 <Update label="01/22/2025" description="version 1.0">
   Add your changelog here
 </Update>
 
-<Frame as="div">
+<Frame>
   Adjust the caption and image of your Frame component here.
 </Frame>
 
 <Steps>
-  <Step title="Step 1" />
-
-  <Step title="Step 2" />
+  <Step title="Step 1">
+    
+  </Step>
+  <Step title="Step 2">
+    
+  </Step>
 </Steps>
 
 ```
@@ -123,13 +134,44 @@ Curious about what changed in the CLI version? [Check out the CLI changelog.](ht
 ```
 
 <CodeGroup>
-  ```javascript helloWorld.js
-  console.log("Hello World");
-  ```
+
+```javascript helloWorld.js
+console.log("Hello World");
+```
+
 </CodeGroup>
 
 <Tabs>
-  <Tab title="Tab 1" />
-
-  <Tab title="Tab 2" />
+  <Tab title="Tab 1">
+    
+  </Tab>
+  <Tab title="Tab 2">
+    
+  </Tab>
 </Tabs>
+
+<Tip>
+  Unlimited editors available under the [Pro Plan](https://mintlify.com/pricing) and above.
+</Tip>
+
+If the deployment is successful, you should see the following:
+
+<Frame>
+  
+</Frame>
+
+## Code Formatting
+
+We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
+    This may be due to an outdated version of node. Try the following:
+
+    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
+    2. Upgrade to Node v19 or higher.
+    3. Reinstall mintlify: `npm install -g mintlify`
+  </Accordion>
+</AccordionGroup>
